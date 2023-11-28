@@ -1,0 +1,125 @@
+.portrait-cv-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+.img-container{
+  width: 100%;
+  padding: 0;
+}
+
+.portrait{
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cv-summary{
+  font-size: 1.2rem;
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+  line-height: 1.5;
+  padding: 1em 0;
+  border-radius: 10px;
+ 
+}
+
+.cv-summary > h3{
+  font-size: 1.5rem;
+  margin-bottom:0.5EM ;
+}
+
+.project-section{
+  text-align: center;
+ gap: 0.2em;
+}
+.project-section h2{
+  font-size: 3rem;
+}
+
+
+
+.project-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 2px solid magenta; */
+  gap: 0.5em;
+  justify-content: space-evenly;
+  margin: 2em 0 ;
+}
+
+.project-card{
+  background-color: #fff;
+  border-radius: 10px;
+  flex-basis: 200px;
+  flex-grow: 1;
+  max-width: 300px;
+  margin: 0.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.project-card h3{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-bottom: 0.5em;
+}
+
+.project-card>img{
+  
+  border-radius: 10px 10px 0 0;
+  
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+
+.project-card>a{
+  align-self: flex-end;
+}
+
+.project-card>a>button{
+  font-size: 0.8rem;
+  margin: 0.8em 0.5em;
+  padding: 0.2em 0.5em;
+  border: none;
+  background-color: #14213D;
+  color: white;
+  border-top-right-radius: 10px;
+  cursor:pointer;
+}
+
+/* the hover effect will be fixed with javascript */
+
+@media (min-width:750px) {
+  .portrait-cv-container{
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 1em;
+  }
+
+  .cv-summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .project-card-container{
+    margin: 1.5em 1em 1.5em 1em;
+  }
+
+  .project-card{
+    opacity: 0.5;
+  }
+  .project-card:hover{
+    scale: 1.1;
+    opacity: 1;
+   
+  }
+
+}

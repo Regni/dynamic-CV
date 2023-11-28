@@ -1,0 +1,48 @@
+{
+  "Alexander Kuiper": {
+      "My goals": "I want to acquire the necessary skills to start a rewarding career with development opportunities. I want to do this by attending a vocational education programme where I can mix theory with practice, start networking in the bransch, and get into work quickly after graduation.",
+      "Education": {
+          "Primary education in the Netherlands (2009-2012)": [
+              "Dutch primary education",
+              "Secondary Education, Medical Technician / Netherlands",
+              "Training to become a trained medical technician"
+          ],
+          "SFI / Komvux, Norrköping (2015-2018)": "",
+          "Basic eligibility for Reell kompetens / Komvux, Norrköping(2015-2018)": [
+              "Social studies 1b",
+              "Swedish as a second language 1-3",
+              "English 5-6",
+              "Maths 1c-4",
+              "Chemisty 1",
+              "Physics 1-2"
+          ],
+          "Mixed courses programming+economics / BTH, Linnaeus University,Karlskrona + Distance learning": {
+              "BTH": [
+                  " Mathematical problem solving 4 credits - G",
+                  "Physics Basic Course 6 credits - G",
+                  "Basics in Game Development 8 credits - G",
+                  "Programming and Problem Solving with Python 6 credits - G"
+              ],
+              "Linnaeus University": [
+                  "Basic Mathematics for Computer Scientists 7.5 credits - B",
+                  "Introductory Programming 7.5 credits - B",
+                  "Technology Communication 7.5 credits - A",
+                  "Computer Security 7.5 credits - C",
+                  "Economics - Microeconomics 15 credits - D"
+              ]
+          }
+      },
+      "Experience": {
+          "2009-2012": "Medical Technology Repairer - internship and extra work, maintenance and some repair of electronic medical devices.",
+          "2014-2018": "Newspaper messenger, supplier / NTM, Svensk Hemleverans, Norrköping Newspaper carrier with extended delivery responsibility with letters and parcels.",
+          "2020-2022": "Newspaper carrier, supplier / Point Logistik, Karlskrona, Sweden Newspaper carrier with extended delivery responsibility with letters and parcels."
+      },
+      "Skills": [
+          "Teamwork",
+          "Planning",
+          "Leadership",
+          "Problem-solving"
+      ],
+      "Hobbies": "Guild officer, along with three others, for a guild of approximately 30 players in World of Warcraft. We schedule game meetings and analyse the players' abilities and performance to enchance the guild's overall performance."
+  }
+}

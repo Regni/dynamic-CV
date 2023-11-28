@@ -1,0 +1,156 @@
+/* sidebar section mobile */
+
+ul{
+  list-style: none;
+}
+.container{
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  
+}
+
+.personal-summary{
+  border-radius: 10px;
+  background-color: #14213D ;
+  color: white;
+  padding: 1em 0;
+}
+
+.image-container{
+  max-width: 200px;
+  width: 50%;
+  margin: 0 AUTO 1em auto;
+display: flex;
+justify-content: center;  
+}
+.personal-summary img{
+  align-self: center;
+  width: 100%;
+  
+border-radius: 50%;
+}
+
+.email{
+  color: white;
+  line-height: 1.2;
+}
+
+.personal-info-container{
+
+  font-weight: 900;
+}
+
+.personal-info-container>li{
+  font-size: 1.1rem;
+  padding-left: 0.5em;
+}
+
+.personal-info-items{
+  padding-left: 0.5em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* cv part */
+
+.cv{
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 1em ;
+  padding: 1em 0;
+  grid-row: 2 / span 3;
+  font-size: 1.1rem ;
+}
+
+
+h1{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+h4{
+  font-size: 1.3REM;
+  padding-left: 0.3em;
+  background-color: #FCA311 ;
+  color: #fff;
+}
+
+.description{
+  padding-left: 0.5em;
+}
+
+.list-item{
+  font-weight: 900;
+  font-size: 1.1rem;
+  padding-left: 0.3em;
+  
+}
+
+.list-item>p{
+font-weight: 400;
+font-size: 1rem;
+margin-left: 0.5em;
+}
+.sublist{
+  list-style: none;
+  padding-left: 0.5em;
+}
+
+
+
+.sub-sublist{
+padding-left: 0.5em;
+list-style: none;
+}
+
+.sub-sub-sublist{
+  font-weight: 400;
+padding-left: 0.5em;
+list-style: none;
+}
+
+.bold-sublist{
+  font-weight: 700;
+}
+
+/* desktop */
+@media(min-width:750px){
+
+
+  .container{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    margin-bottom: 1em;
+  }
+
+ .cv{
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    margin: 0 1em;
+  }
+
+ .cv>p, .cv>ul {
+    padding: 0 0.5em;
+  }
+ h4{
+  font-size: 1.5rem;
+ }
+  .personal-summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 0 0 1em;
+  }
+  .personal-summary a {
+    padding: 0 0.4em 0 0;
+    
+  }
+  .personal-summary>ul{
+
+    line-height: 2;
+    font-size: 1.3rem;
+  
+  }
+}

@@ -1,0 +1,69 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  line-height: 1.5;
+}
+
+body{
+  font-family: "work sans", sans-serif;
+  background-color: #E5E5E5;
+}
+/* Header and menu */
+.menu-container{
+  background-color: #FCA311;
+  height: 4rem;
+  display: flex;
+  margin-bottom: 1rem;
+  list-style: none;
+  font-size: 1.3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  
+}
+
+.menu-item{
+ 
+  
+  flex-grow: 1;
+  /* border: 2px solid green; */
+  padding: 0.2em 0;
+  text-align: center;
+}
+
+.menu-item > a {
+  color: white;
+  padding: 0.3em 0.3em;
+  text-decoration: none;
+}
+
+.active{
+  color: white;
+  text-decoration: underline;
+}
+
+/* footer and links */
+footer{
+  background-color: #FCA311;
+  color: white;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px 10px 0 0 ;
+}
+
+footer span{
+  font-size: 1.7rem;
+  color: white;
+
+}
+
+footer a:visited{
+  color: white;
+  
+}

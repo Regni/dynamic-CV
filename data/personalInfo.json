@@ -1,0 +1,44 @@
+{
+  "Personal Information": [
+      [
+          "Address:",
+          [
+              "Tröskaregatan 5",
+              "58333 Linköping",
+              "Sweden"
+          ]
+      ],
+      [
+          "Contact:",
+          [
+              "Phone: +46 70 86 18 948",
+              "Email: alexander.kuiper@chasacademy.se"
+          ]
+      ],
+      [
+          "Date of Birth:",
+          [
+              "08-Nov-1990"
+          ]
+        ]],
+        "Languages" :
+          [
+              "Dutch",
+              "English",
+              "Swedish"
+          ],
+        "Software skills":
+          [
+              "Python",
+              "Java",
+              "HTML and CSS"
+          ],
+          "Personality": 
+          [
+              "Problem solver",
+              "Honest",
+              "Reliable",
+              "Accountable"  
+          ]
+      
+}
