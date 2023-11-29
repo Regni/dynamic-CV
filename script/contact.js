@@ -13,21 +13,65 @@
     //     document.body.removeChild(a);
     //     window.URL.revokeObjectURL(url);
     // }
-    const formContainer = document.querySelector(".form-container")
-    createForm()
-
-let map = L.map('map').setView([58.38908347907847, 15.565484313558347], 15)
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
 
 
+//initialize form and map
+createForm()
+createMap()
+//constant elements
+const popup = document.getElementById("popup");
+const span = document.getElementsByClassName("close")[0];
+const submit = document.getElementById("send")
+
+//event listener for the send button
+
+submit.addEventListener("click", function(evt){
+  //Stop reloading page
+  evt.preventDefault()
+  //get the info from the form
+  createJSONinfo()
+ //message send message
+ popup.style.display = "block";
+})
+
+// When the user clicks on x or on the window it will close the popup
+span.onclick = function() {
+  popup.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
+}
 
 
-//Create the form and reset
+//function section
+
+//A function that creates json object ready to be send somewhere else to a email or database
+function createJSONinfo(){
+  //get all the values
+  const name = document.getElementById("name")
+  const email = document.getElementById("email")
+  const message = document.getElementById("message")
+  //put it a object
+  let info = {
+    name : name.value,
+    email: email.value,
+    message: message.value
+  }
+
+    //object to json 
+    console.log(JSON.stringify(info))
+    //form reset
+    name.value =""
+    email.value=""
+    message.value=""
+}
+
+//Create the form 
 function createForm(){
   //container
+  const formContainer = document.querySelector(".form-container")
   const form = document.createElement("form")
   
   //create all the element required in the form
@@ -65,41 +109,11 @@ function createForm(){
   formContainer.appendChild(form)
 }
 
+function createMap(){
+  let map = L.map('map').setView([58.38908347907847, 15.565484313558347], 15)
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
 
-
-
-
-
-const submit = document.getElementById("send")
-//for the send button
-submit.addEventListener("click", function(evt){
-  //Stop reloading page
-  evt.preventDefault()
-  //get the info from the form
-  createJSONinfo()
-  
-})
-
-
-//A function that creates json object ready to be send somewhere else to a email or database
-function createJSONinfo(){
-  //get all the values
-  const name = document.getElementById("name").value
-  const email = document.getElementById("email").value
-  const message = document.getElementById("message").value
-  //put it a object
-  let info = {
-    name : name,
-    email: email,
-    message: message
-  }
-
-    //object to json 
-    console.log(JSON.stringify(info))
-    //form reset
-    formContainer.innerHTML="";
-    createForm()
 }
-
-
-
