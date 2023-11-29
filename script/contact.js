@@ -33,14 +33,14 @@ submit.addEventListener("click", function (evt) {
 });
 
 // When the user clicks on x or on the window it will close the popup
-span.onclick = function () {
+span.addEventListener("click", function () {
   popup.style.display = "none";
-};
-window.onclick = function (event) {
-  if (event.target == popup) {
+});
+window.addEventListener("click", function (evt) {
+  if (evt.target == popup) {
     popup.style.display = "none";
   }
-};
+});
 
 //function section
 
