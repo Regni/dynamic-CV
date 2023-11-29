@@ -96,16 +96,6 @@ async function createMain(){
       createCvSublist(something[element], newUL)
       mainElement.appendChild(newUL)
 
-      // for(const subElement in something[element]){
-        
-      //   if(typeof subElement == "string"){
-      //     const newLi = document.createElement("li")
-      //     newLi.textContent = subElement
-      //     newUL.appendChild(newLi)
-          
-      //   }
-      //   mainElement.appendChild(newUL)
-      // }
     }
     
   }

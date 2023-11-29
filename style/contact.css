@@ -40,6 +40,13 @@ button{
   margin-top: 1.5em;
 }
 
+.map-container{
+  height: 300px;
+  margin: .5em;
+  border-radius: 10px;
+  
+}
+
 @media(min-width:750px){
   .container{
     margin: 10rem 0;
@@ -60,5 +67,12 @@ button{
   justify-content: center;
   gap: 10px;
 }
+
+.map-container{
+  height: 300px;
+  flex-basis: 30rem;
+  
+}
+
 
 }
