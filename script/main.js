@@ -87,7 +87,6 @@ function createCvSublist(sublist, parentUl) {
 
   keys.forEach((element) => {
     const newBoldLi = document.createElement("li");
-    console.log(element.length + " - " + element);
     if (element.length > 1) {
       newBoldLi.textContent = element;
       newBoldLi.className = "bold-sublist";
