@@ -33,7 +33,7 @@
 }
 
 .project-section{
-  text-align: center;
+  /* text-align: center; */
  gap: 0.2em;
 }
 .project-section h2{
@@ -54,10 +54,10 @@
 .project-card{
   background-color: #fff;
   border-radius: 10px;
-  flex-basis: 200px;
-  flex-grow: 1;
-  max-width: 300px;
-  margin: 0.2em;
+  /* flex-basis: 200px; */
+  /* flex-grow: 1; */
+  max-width: 30em; 
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
