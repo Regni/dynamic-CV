@@ -1,3 +1,7 @@
+/* Mainly CSS for carousel written by Anamaira Miehs
+Link: https://codepen.io/anamariamiehs/pen/rYwbgG 
+Minimal changes has been done by me*/
+
 .carousel {
   position: relative;
   height: 500px;
@@ -41,8 +45,10 @@
   right: 0;
   bottom: 0;
   top: auto;
-  color: white;
+  color: black;
   padding: 20px;
+  /* links were not clickable */
+  z-index: 1;
 }
 .carousel .carousel-controls {
   position: absolute;
