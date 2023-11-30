@@ -1,18 +1,3 @@
-// function createFile() {
-//     var text = document.getElementById('textInput').value;
-//     var blob = new Blob([text], { type: "text/plain;charset=utf-8" });
-//     var url = window.URL.createObjectURL(blob);
-
-//     var a = document.createElement('a');
-//     a.href = url;
-//     a.download = 'downloaded_file.txt';
-//     a.style.display = 'none';
-//     document.body.appendChild(a);
-//     a.click();
-//     document.body.removeChild(a);
-//     window.URL.revokeObjectURL(url);
-// }
-
 //initialize form and map
 createForm();
 createMap();

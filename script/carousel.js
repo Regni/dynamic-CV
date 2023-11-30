@@ -1,3 +1,7 @@
+//This is not my code
+//Developer: Anamaira Miehs
+//link: https://codepen.io/anamariamiehs/pen/rYwbgG
+
 function Carousel() {
   var self = this;
 
@@ -37,3 +41,38 @@ function Carousel() {
 }
 
 var carousel = new Carousel();
+
+//my code to link the buttons
+
+//website links
+const project1Btn = document.getElementById("project1Website");
+const project2Btn = document.getElementById("project2Website");
+const project3Btn = document.getElementById("project3Website");
+
+project1Btn.addEventListener("click", function () {
+  window.open("https://regni.github.io/rock-paper-scissors/");
+});
+
+project2Btn.addEventListener("click", function () {
+  window.open("https://regni.github.io/random_number/");
+});
+project3Btn.addEventListener("click", function () {
+  window.open("https://regni.github.io/affixes/");
+});
+
+//github repo links
+const project1Git = document.getElementById("project1Github");
+const project2Git = document.getElementById("project2Github");
+const project3Git = document.getElementById("project3Github");
+
+project1Git.addEventListener("click", function () {
+  window.open("https://github.com/Regni/rock-paper-scissors");
+});
+
+project2Git.addEventListener("click", function () {
+  window.open("https://github.com/Regni/random_number");
+});
+
+project3Git.addEventListener("click", function () {
+  window.open("https://github.com/Regni/affixes");
+});

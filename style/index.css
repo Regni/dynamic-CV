@@ -33,37 +33,22 @@
 }
 
 .project-section{
-  /* text-align: center; */
- gap: 0.2em;
+   text-align: center; 
+  gap: 0.2em;
 }
 .project-section h2{
   font-size: 3rem;
 }
 
 
-
-.project-card-container{
-  display: flex;
-  flex-wrap: wrap;
-  /* border: 2px solid magenta; */
-  gap: 0.5em;
-  justify-content: space-evenly;
-  margin: 2em 0 ;
-}
-
 .project-card{
   background-color: #fff;
   border-radius: 10px;
-  /* flex-basis: 200px; */
-  /* flex-grow: 1; */
   max-width: 30em; 
   margin: auto;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1.5;
-  font-size: 1rem; */
-  transition: 0.3S;
+  
+
+ 
 }
 .caption{
   display: flex;
@@ -71,6 +56,7 @@
   align-items: center;
   line-height: 1.5;
   font-size: 1rem;
+  opacity: 1;
 }
 
 .project-card h3{
@@ -87,22 +73,21 @@
   width: 100%;
 }
 
-.caption>a{
-  align-self: flex-end;
-}
-
-.caption>a>button{
+.caption> button{
   font-size: 0.8rem;
-  margin: 0.8em 0.5em;
-  padding: 0.2em 0.5em;
+  width: 9em;
+  margin: 0.4em 0.5em;
+  padding: 0.3em 0.5em;
   border: none;
   background-color: #14213D;
   color: white;
   border-top-right-radius: 10px;
   cursor:pointer;
+  align-self: flex-end;
 }
-
-/* the hover effect will be fixed with javascript */
+.caption> p{
+  margin-bottom: 2rem;
+}
 
 @media (min-width:750px) {
   .portrait-cv-container{
@@ -121,13 +106,5 @@
     margin: 1.5em 1em 1.5em 1em;
   }
 
-  /* .project-card{
-    opacity: 0.5;
-  }
-  .project-card:hover{
-    scale: 1.1;
-    opacity: 1;
-   
-  } */
 
 }
